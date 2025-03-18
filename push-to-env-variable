@@ -1,0 +1,14 @@
+function pushToEnvVariable(varName, varValue) {
+    let target = pm.environment.get(varName);
+    if(!target) {
+        target = [];
+    }
+    else {
+        target = JSON.parse(target);
+    }
+    console.log("Target: ", target);
+    target.push(varValue);
+    pm.environment.set(varName, JSON.stringify(target));
+}
+
+module.exports = pushToEnvVariable;
