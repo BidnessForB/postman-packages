@@ -1,5 +1,5 @@
 
-function findCollectionForRequest(requestId, colNameFilter) {
+function findCollectionIdForRequest(requestId, colNameFilter) {
     
     return new Promise((resolve, reject) => {
         var collectionIds = [];
@@ -84,4 +84,4 @@ return retVal;
 }
 
 
-module.exports = findCollectionForRequest;
+module.exports = findCollectionIdForRequest;
