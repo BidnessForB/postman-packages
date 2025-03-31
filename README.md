@@ -11,6 +11,7 @@ TODO: Expand to support finding examples, variables, etc
 USAGE:  
 
 deepFindItems(items,type,key)  
+|||
 |--|--|
 |items|Array of postman items, eg collection.item  |
 |type|`request` or `folder`|
